@@ -1,10 +1,10 @@
 @font-face{
   font-family: myfont1;
-  src: url(../Myfonts/Aladin/Aladin-Regular.ttf);
+  src: url(Assets/Myfonts/Aladin/Aladin-Regular.ttf);
 }
 @font-face{
   font-family: myfont2;
-  src: url(../Myfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+  src: url(Assets/Myfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
 }
 
 
