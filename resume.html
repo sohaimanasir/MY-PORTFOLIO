@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: myfont1;
+            src: url(../Myfonts/Aladin/Aladin-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: myfont2;
+            src: url(../Myfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+        }
+
+        body {
+            box-sizing: border-box;
+            margin: 0;
+
+
+        }
+
+        #bg-video-2 {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            min-height: 100%;
+            min-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            color:  rgb(26, 25, 25);
+            text-shadow: 3px 3px 7px white;
+            font-size: 42px;
+            position: absolute;
+            right: 50px;
+            top: 0px;
+            margin-top: -30px;
+            overflow: hidden;
+            font-weight: 700;
+            font-family: myfont1;
+            font-style: italic;
+
+
+        }
+
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+
+        }
+
+        .top-nav {
+            overflow: hidden;
+            display: flex;
+            border-radius: 5px;
+
+
+
+        }
+
+        .top-nav a {
+
+            float: right;
+            background-color: rgba(128, 128, 128, 0.534);
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17px;
+            text-decoration: none;
+            width: 100px;
+            color: black;
+            font-family: myfont1;
+        }
+
+        .top-nav a:hover {
+            background-color: rgb(21, 5, 94);
+            font-size: 19px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-video-2">
+        <video autoplay muted loop id="bg-video-2">
+            <source src="2598dc43ce37876de9774cd069043f46.mp4" type="video/mp4"> background video
+        </video>
+        <header>
+            <h5 class="name">SOHAIMA.</h5>
+        </header>
+        <div class="container">
+
+
+            <div class="top-nav">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+</body>
+</html>

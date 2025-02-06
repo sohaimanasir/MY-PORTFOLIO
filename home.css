@@ -1,0 +1,105 @@
+@font-face{
+  font-family: myfont1;
+  src: url(../Myfonts/Aladin/Aladin-Regular.ttf);
+}
+@font-face{
+  font-family: myfont2;
+  src: url(../Myfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+
+
+body{
+  margin: 0px;
+  padding: -5px;
+  box-sizing: border-box;
+}
+
+
+
+#bg-video {
+ 
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+header{
+  color: rgb(26, 25, 25);
+  font-size: 42px;
+  position: absolute;
+  right: 50px;
+  top: 0px;
+  margin-top: -30px;
+  overflow: hidden;
+  font-weight: 700;
+  font-family: myfont1;
+  font-style: italic;
+  text-shadow: 3px 3px 7px white;
+
+  
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+
+}
+.top-nav{
+  overflow: hidden;
+  display: flex;
+  border-radius: 5px;
+
+  
+
+}
+.top-nav a{
+  
+  float: right;
+  background-color: rgba(128, 128, 128, 0.534);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+  width: 100px;
+  color: black;
+  font-family: myfont1;
+}
+.top-nav a:hover{
+  background-color: rgb(21, 5, 94);
+  font-size: 19px;
+  color: white;
+  
+  
+}
+img {
+  width: 700px;
+  float: right;
+  position: absolute;
+  top: 120px;
+  left: 680px;
+  
+}
+.personal-info{
+  width: 40%;
+  color: rgb(199, 199, 199);
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 280px;
+  left: 100px;
+  font-weight: 400;
+  font-family: myfont1;
+  font-style: oblique;
+}
+
+
+
+

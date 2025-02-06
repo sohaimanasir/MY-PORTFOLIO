@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        @font-face {
+            font-family: myfont1;
+            src: url(../Myfonts/Aladin/Aladin-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: myfont2;
+            src: url(../Myfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+        }
+
+        body {
+            box-sizing: border-box;
+            margin: 0;
+
+
+        }
+
+        #bg-video-2 {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            min-height: 100%;
+            min-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        header {
+            color: rgb(26, 25, 25);
+            text-shadow: 3px 3px 7px white;
+            font-size: 42px;
+            position: absolute;
+            right: 50px;
+            top: 0px;
+            margin-top: -30px;
+            overflow: hidden;
+            font-weight: 700;
+            font-family: myfont1;
+            font-style: italic;
+
+
+        }
+
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+
+        }
+
+        .top-nav {
+            overflow: hidden;
+            display: flex;
+            border-radius: 5px;
+
+
+
+        }
+
+        .top-nav a {
+
+            float: right;
+            background-color: rgba(128, 128, 128, 0.534);
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17px;
+            text-decoration: none;
+            width: 100px;
+            color: black;
+            font-family: myfont1;
+        }
+
+        .top-nav a:hover {
+            background-color: rgb(6, 42, 95);
+            font-size: 19px;
+            color: white;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: myfont1;
+            
+        
+           
+        }
+        .card{
+            border: 2px solid rgba(255, 255, 255, 0.445);
+            margin: 10px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.178);
+            border-radius: 15px;
+            position: relative;
+            top: 50px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-bottom-color: rgba(2, 8, 65, 0.767);
+            height: 250px;
+            width: 400px;
+            transition: 1s ease ;
+
+            
+            
+        }
+        .card:hover{
+            background-color: gray;
+            transform: scale(1.1,1.1);
+            
+        }
+
+        h1{
+            color: silver;
+            text-shadow: 3px 3px 5px gray;
+            font-family: myfont1;
+            margin-left: 680px;
+            margin-top: 55px;
+            font-size: 45px;
+            text-decoration: underline 2px gray;
+            
+        }
+        p{
+            font-weight: 500;
+            font-size: 21px;
+            padding: 10px;
+        }
+        h4{
+            font-weight: bolder;
+            text-decoration: underline 2px;
+            margin-inline: 65px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-video-2">
+        <video autoplay muted loop id="bg-video-2">
+            <source src="2598dc43ce37876de9774cd069043f46.mp4" type="video/mp4"> background video
+        </video>
+        <header>
+            <h5 class="name">SOHAIMA.</h5>
+        </header>
+        <div class="container">
+
+
+            <div class="top-nav">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <section>
+                <h1>MY SERVICES</h1>
+                <div class="main">
+                    <div class="card">
+                        <h4>Web Design</h4>
+                        <p>Crafting unique, visually engaging websites tailored to your brand's identity. My designs
+                            ensure
+                            a seamless user experience and aesthetic appeal, helping your business stand out online.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Responsive Web</h4>
+                        <p>I build websites that adapt to any device, providing a smooth browsing experience on
+                            desktops, tablets, and mobiles. Stay accessible to your audience no matter where they are.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>E-commerce</h4>
+                        <p>Empowering businesses to sell online with secure, scalable e-commerce solutions. From product
+                            listings to payment gateways, I ensure a seamless shopping experience for your customers.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Maintenance</h4>
+                        <p>Keep your website up-to-date and fully functional with my maintenance services. From updates
+                            and backups to security checks, I ensure your website stays in top shape.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Applications</h4>
+                        <p>I develop custom web applications that are robust, user-friendly, and tailored to your
+                            specific business needs. Whether its CRM systems or booking platforms, I deliver seamless
+                            functionality.</p>
+                    </div>
+                    <div class="card">
+                        <h4>UX/UI</h4>
+                        <p>Enhance your users' experience with intuitive and beautiful designs. My focus is on creating
+                            interfaces that are easy to use, ensuring user satisfaction and retention.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+
+</html>
