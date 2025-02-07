@@ -110,8 +110,8 @@
             color: rgb(0, 0, 0);
             cursor: pointer;
             border-bottom-color: rgba(2, 8, 65, 0.767);
-            height: 405px;
-            width: 400px;
+            height: 305px;
+            width: 300px;
             transition: 1s ease;
             display: flex;
 
@@ -121,6 +121,7 @@
 
             transform: scale(1.05, 1.05);
             z-index: 1000;
+            
 
         }
 
@@ -128,6 +129,33 @@
         p {
             margin-top: 20px;
             text-align: center;
+        }
+        @media screen and (min-width:320px) and (max-width: 576px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+            }
+            .top-nav{
+                visibility: hidden;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width: 768px){
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -120px;
+                gap: 100px;
+            }
+            .top-nav{
+                visibility: hidden;
+            }
+
+        }
+        @media screen and (min-width:769px) and (max-width: 1300px){
+            .main{
+                gap: 100px;
+            }
         }
 
        

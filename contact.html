@@ -96,7 +96,7 @@
             background-color: rgba(128, 128, 128, 0.534);
             font-family: myfont1;
             font-size: 20px;
-            margin: 120px 50px ;
+            margin: 70px 50px ;
             max-width: 100%;
             display: flex;
         }
@@ -112,7 +112,7 @@
         input {
             background-color: black;
             border: 1px solid black;
-            margin-top: 38px;
+            margin-top: 30px;
             
             border-bottom-color: darkgray;
             padding-left: 20px;
@@ -120,7 +120,7 @@
 
         }
         .info-1{
-            width: 50%;
+          
             height: 400px;
             border: 2px solid ;
             margin: 10px;
@@ -136,7 +136,7 @@
         }
 
         .info-2{
-            width: 50%;
+            
             height: 400px;
             border: 2px solid ;
             margin: 10px;
@@ -149,15 +149,23 @@
         .contact-info{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             gap: 5px;
-            max-width: 70%;
+            width: 100%;
+            margin-inline: 30px;
+
+        }
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-inline: 150px;
         }
         .contact-info h2{
             margin-left: 22px;
         }
         .info-section{
-                padding-left: 125px;
+                padding-left: 10px;
             }
 
 
@@ -208,12 +216,13 @@
             </div>
             <div class="container-lg">
                 <div class="row-8 info-1">
-                    <div class="col-6">
+                    <div class="col-6 form">
                         <h2>LET´S CONNECT</h2>
                         <input type="text" placeholder="Name" id="name">
                         <input type="email" placeholder="Email" id="email" required>
                         <input type="text" placeholder="Subject" id="subject">
                         <input type="text" placeholder="Message" maxlength="100">
+                        <input type="button" value="submit" style="width: 200px; font-size: 22px; padding: 2px; color: darkgrey;">
                     </div>
                 </div>
                 <div class="row-8 info-2">

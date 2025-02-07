@@ -107,11 +107,12 @@
             border-radius: 15px;
             position: relative;
             top: 50px;
+            left: 100px;
             color: rgb(0, 0, 0);
             cursor: pointer;
             border-bottom-color: rgba(2, 8, 65, 0.767);
             height: 250px;
-            width: 400px;
+            width: 300px;
             transition: 1s ease;
 
 
@@ -128,7 +129,8 @@
             color: silver;
             text-shadow: 3px 3px 5px gray;
             font-family: myfont1;
-            margin-left: 680px;
+            /* margin-left: 550px; */
+            text-align: center;
             margin-top: 55px;
             font-size: 45px;
             text-decoration: underline 2px gray;
@@ -147,7 +149,41 @@
             margin-inline: 65px;
             font-size: 23px;
         }
-    </style>
+                
+        @media screen and (min-width:320px) and (max-width: 576px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .top-nav{
+                visibility: hidden;
+            }
+            section h1{
+                text-align: center;
+            }
+        }
+        @media screen and (min-width:577px) and (max-width: 768px){
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .top-nav{
+                max-width: 100%;
+            }
+        }
+        @media screen and (min-width:769px) and (max-width: 1300px){
+            .main{
+                display: flex;
+                flex-wrap: wrap ;
+            }
+        }
+        
+        
+        
+        
+        </style>
 </head>
 
 <body>
