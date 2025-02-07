@@ -4,8 +4,9 @@
 }
 @font-face{
   font-family: myfont2;
-  src: url(Assets/Myfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+  src: url(Assets/Myfonts/darling_coffee/Darling\ Coffee.ttf);
 }
+
 
 
 
@@ -28,6 +29,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   
 }
 
@@ -40,7 +42,7 @@ header h5{
   margin-top: 15px;
   overflow: hidden;
   font-weight: 700;
-  font-family: myfont1;
+  font-family: myfont2;
   font-style: italic;
   text-shadow: 3px 3px 7px white;
 
@@ -55,8 +57,10 @@ header h5{
 .top-nav{
   overflow: hidden;
   display: flex;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-left: 15px;
+  box-shadow: 0px 0px 2px 2px gray;
+  width: 46%;
   
 
   
@@ -83,30 +87,140 @@ header h5{
   
   
 }
-img {
-  width: 500px;
-  float: right;
-  position: absolute;
-  top: 200px;
-  left: 700px;
-  
+.container {
+  display: flex;
 }
+
+.sidebar {
+  width: 130px;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.534);
+  color: #fff;
+  box-sizing: border-box;
+  position: fixed;
+  visibility: hidden;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 200px;
+  text-align: justify;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+
+.sidebar a:hover {
+  background-color: #2980b9;
+}
+
 .personal-info{
-  width: 42%;
-  color: rgb(199, 199, 199);
+  width: 80%;
+  height: 65%;
+  color: black;
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   position: absolute;
   top: 200px;
-  left: 100px;
+  left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-family: myfont1;
-  font-style: oblique;
+  word-spacing: 15px;
   border: 1px solid gray;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 0px 2px 2px white;
+  background-image: url(Assets/media/herosection-bg.jpg);
+  user-select: none;
+  animation: fade-in 0.8s;
+  
 }
+
+.btn{
+    
+  display: inline-block;
+  border: 1px solid rgb(0, 110, 255);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 450px;
+  height: 70px;
+  transition: all 0.5s ease-in;
+  box-shadow: 0px 0px 2px 2px rgb(0, 37, 51);
+  display: flex;
+  flex-wrap: wrap;
+  animation: fade-in 0.8s;
+  word-spacing: 10px;
+  
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+  
+}
+.btn::before {
+  left: -10px;
+  background-color: rgb(42, 83, 121);
+}
+.btn::after {
+  right: -10px;
+  background-color: rgb(0, 45, 71);
+}
+.btn:hover::before,
+.btn:hover::after {
+  width: 53%;
+  
+}
+.btn:hover span{
+  color:rgb(142, 179, 194);
+  text-shadow: 2px 2px 12px rgb(209, 208, 208);
+  transition: 0.3s;
+}
+.btn span{
+  color: rgb(0, 20, 39);
+  font-size: 26px;
+  transition: all 0.3s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  
+
+
+}
+
+
+
+
 @media screen and (min-width:320px) and (max-width: 576px){
   .container img{
     visibility: hidden;
@@ -115,11 +229,38 @@ img {
     visibility: hidden;
   }
   .personal-info{
-    width: 100%;
+    width: auto;
+    min-height: fit-content;
+    margin-right:40px;
 
   }
+  .sidebar{
+    margin-top: 190px;
+    visibility: visible;
+  }
+
    
 }
+@media screen and (min-width:577px) and (max-width: 992px){
+  .container img{
+    visibility: hidden;
+  }
+  .top-nav{
+    visibility: hidden;
+  }
+  .personal-info{
+    width: auto;
+    min-height: fit-content;
+    margin-right:40px;
+
+  }
+  .sidebar{
+    
+    visibility: visible;
+  }
+
+}
+
 
 
 
