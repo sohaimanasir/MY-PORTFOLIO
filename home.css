@@ -84,8 +84,8 @@ img {
   width: 500px;
   float: right;
   position: absolute;
-  top: 250px;
-  left: 750px;
+  top: 200px;
+  left: 700px;
   
 }
 .personal-info{
@@ -94,7 +94,7 @@ img {
   text-align: center;
   font-size: 30px;
   position: absolute;
-  top: 280px;
+  top: 200px;
   left: 100px;
   font-weight: 400;
   font-family: myfont1;
